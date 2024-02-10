@@ -1,7 +1,9 @@
 package com.mikulittle.resourcefulslimes;
 
+import com.mikulittle.resourcefulslimes.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -32,8 +34,8 @@ public class ResourcefulSlimes
 
         // // Register the Deferred Register to the mod event bus so blocks get registered
         // BLOCKS.register(modEventBus);
-        // // Register the Deferred Register to the mod event bus so items get registered
-        // ITEMS.register(modEventBus);
+        // Register the Deferred Register to the mod event bus so items get registered
+        ModItems.register(modEventBus);
         // // Register the Deferred Register to the mod event bus so tabs get registered
         // CREATIVE_MODE_TABS.register(modEventBus);
 
@@ -61,8 +63,9 @@ public class ResourcefulSlimes
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-        // if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS)
-        //     event.accept(EXAMPLE_BLOCK_ITEM);
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.SLIME_CORE);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
