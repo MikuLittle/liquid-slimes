@@ -1,5 +1,6 @@
 package com.mikulittle.resourcefulslimes;
 
+import com.mikulittle.resourcefulslimes.item.ModCreativeModeTabs;
 import com.mikulittle.resourcefulslimes.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
@@ -37,7 +38,7 @@ public class ResourcefulSlimes
         // Register the Deferred Register to the mod event bus so items get registered
         ModItems.register(modEventBus);
         // // Register the Deferred Register to the mod event bus so tabs get registered
-        // CREATIVE_MODE_TABS.register(modEventBus);
+        ModCreativeModeTabs.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);

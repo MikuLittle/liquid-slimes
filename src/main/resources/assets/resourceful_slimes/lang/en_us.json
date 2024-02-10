@@ -1,3 +1,5 @@
 {
-    "item.resourceful_slimes.slime_core": "Slime Core"
+    "item.resourceful_slimes.slime_core": "Slime Core",
+
+    "creativetab.resourceful_slimes_tab": "Resourceful Slimes"
 }
