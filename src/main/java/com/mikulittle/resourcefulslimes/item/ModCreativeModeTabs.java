@@ -1,6 +1,7 @@
 package com.mikulittle.resourcefulslimes.item;
 
 import com.mikulittle.resourcefulslimes.ResourcefulSlimes;
+import com.mikulittle.resourcefulslimes.block.ModBlocks;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -24,6 +25,7 @@ public class ModCreativeModeTabs {
         .displayItems((pParameters, pOutput) -> {
             pOutput.accept(ModItems.SLIME_CORE.get());
             pOutput.accept(Items.SLIME_BALL);
+            pOutput.accept(ModBlocks.CORE_HOLDER.get());
         })
         .build());
 
