@@ -8,6 +8,7 @@ import com.mikulittle.resourcefulslimes.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -19,7 +20,7 @@ public class ModBlocks {
         DeferredRegister.create(ForgeRegistries.BLOCKS, ResourcefulSlimes.MODID);
 
     public static final RegistryObject<Block> CORE_HOLDER = registerBlock("core_holder",
-    () -> new Block(BlockBehaviour.Properties.of()));
+    () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.GLASS)));
 
     private static <T extends Block>RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block) {
         return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
