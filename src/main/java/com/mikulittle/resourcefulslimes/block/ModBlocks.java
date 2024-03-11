@@ -20,7 +20,12 @@ public class ModBlocks {
         DeferredRegister.create(ForgeRegistries.BLOCKS, ResourcefulSlimes.MODID);
 
     public static final RegistryObject<Block> CORE_HOLDER = registerBlock("core_holder",
-    () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.GLASS)));
+    () -> new Block(
+        BlockBehaviour.Properties.of()
+        .sound(SoundType.GLASS)
+        .strength(4.0f, 5.0f)
+        .requiresCorrectToolForDrops()
+    ));
 
     private static <T extends Block>RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block) {
         return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));

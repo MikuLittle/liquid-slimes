@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "pattern": [
+        "GBG",
+        "SIS",
+        "GBG"
+    ],
+    "key": {
+        "S": {
+            "item": "minecraft:slime_ball"
+        },
+        "I": {
+            "item": "minecraft:iron_ingot"
+        },
+        "B": {
+            "item": "minecraft:iron_bars"
+        },
+        "G": {
+            "item": "minecraft:glass"
+        }
+    },
+    "result": {
+        "item": "resourceful_slimes:core_holder"
+    }
+}
