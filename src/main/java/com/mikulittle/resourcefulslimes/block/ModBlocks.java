@@ -3,6 +3,7 @@ package com.mikulittle.resourcefulslimes.block;
 import java.util.function.Supplier;
 
 import com.mikulittle.resourcefulslimes.ResourcefulSlimes;
+import com.mikulittle.resourcefulslimes.block.custom.CoreHolderBlock;
 import com.mikulittle.resourcefulslimes.item.ModItems;
 
 import net.minecraft.world.item.BlockItem;
@@ -20,7 +21,7 @@ public class ModBlocks {
         DeferredRegister.create(ForgeRegistries.BLOCKS, ResourcefulSlimes.MODID);
 
     public static final RegistryObject<Block> CORE_HOLDER = registerBlock("core_holder",
-    () -> new Block(
+    () -> new CoreHolderBlock(
         BlockBehaviour.Properties.of()
         .sound(SoundType.GLASS)
         .strength(4.0f, 5.0f)

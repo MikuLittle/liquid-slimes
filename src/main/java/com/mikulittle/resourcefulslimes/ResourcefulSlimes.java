@@ -1,6 +1,7 @@
 package com.mikulittle.resourcefulslimes;
 
 import com.mikulittle.resourcefulslimes.block.ModBlocks;
+import com.mikulittle.resourcefulslimes.block.entity.ModBlockEntities;
 import com.mikulittle.resourcefulslimes.item.ModCreativeModeTabs;
 import com.mikulittle.resourcefulslimes.item.ModItems;
 import com.mojang.logging.LogUtils;
@@ -34,12 +35,15 @@ public class ResourcefulSlimes
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
-        // // Register the Deferred Register to the mod event bus so blocks get registered
+        // Register the Deferred Register to the mod event bus so blocks get registered
         ModBlocks.register(modEventBus);
+        ModBlockEntities.register(modEventBus);
         // Register the Deferred Register to the mod event bus so items get registered
         ModItems.register(modEventBus);
-        // // Register the Deferred Register to the mod event bus so tabs get registered
+        // Register the Deferred Register to the mod event bus so tabs get registered
         ModCreativeModeTabs.register(modEventBus);
+
+
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
