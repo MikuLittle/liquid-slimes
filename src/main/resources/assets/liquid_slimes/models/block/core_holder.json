@@ -1,6 +1,6 @@
 {
     "parent": "minecraft:block/cube_all",
     "textures": {
-        "all": "resourceful_slimes:block/core_holder"
+        "all": "liquid_slimes:block/core_holder"
     }
 }

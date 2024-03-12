@@ -1,8 +1,8 @@
-package com.mikulittle.resourcefulslimes.block.custom;
+package com.mikulittle.liquidslimes.block.custom;
 
 import javax.annotation.Nullable;
 
-import com.mikulittle.resourcefulslimes.block.entity.CoreHolderEntity;
+import com.mikulittle.liquidslimes.block.entity.CoreHolderEntity;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;

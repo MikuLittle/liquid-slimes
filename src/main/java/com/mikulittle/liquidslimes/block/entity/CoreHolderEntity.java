@@ -1,4 +1,4 @@
-package com.mikulittle.resourcefulslimes.block.entity;
+package com.mikulittle.liquidslimes.block.entity;
 
 import javax.annotation.Nullable;
 
@@ -61,7 +61,7 @@ public class CoreHolderEntity extends BlockEntity implements MenuProvider {
 
     @Override
     public Component getDisplayName() {
-        return Component.translatable("block.resourceful_slimes.core_holder");
+        return Component.translatable("block.liquid_slimes.core_holder");
     }
 
     @Override

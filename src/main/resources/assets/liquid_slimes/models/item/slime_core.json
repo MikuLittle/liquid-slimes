@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "resourceful_slimes:item/slime_core"
+        "layer0": "liquid_slimes:item/slime_core"
     }
 }

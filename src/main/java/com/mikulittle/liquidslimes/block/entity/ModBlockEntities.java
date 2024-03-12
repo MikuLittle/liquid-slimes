@@ -1,7 +1,7 @@
-package com.mikulittle.resourcefulslimes.block.entity;
+package com.mikulittle.liquidslimes.block.entity;
 
-import com.mikulittle.resourcefulslimes.ResourcefulSlimes;
-import com.mikulittle.resourcefulslimes.block.ModBlocks;
+import com.mikulittle.liquidslimes.LiquidSlimes;
+import com.mikulittle.liquidslimes.block.ModBlocks;
 
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -11,7 +11,7 @@ import net.minecraftforge.registries.RegistryObject;
 
 public class ModBlockEntities {
     public static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITIES =
-        DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, ResourcefulSlimes.MODID);
+        DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, LiquidSlimes.MODID);
 
     public static void register(IEventBus eventBus) {
         BLOCK_ENTITIES.register(eventBus);

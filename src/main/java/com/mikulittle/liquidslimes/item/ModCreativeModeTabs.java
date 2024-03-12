@@ -1,7 +1,7 @@
-package com.mikulittle.resourcefulslimes.item;
+package com.mikulittle.liquidslimes.item;
 
-import com.mikulittle.resourcefulslimes.ResourcefulSlimes;
-import com.mikulittle.resourcefulslimes.block.ModBlocks;
+import com.mikulittle.liquidslimes.LiquidSlimes;
+import com.mikulittle.liquidslimes.block.ModBlocks;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -14,14 +14,14 @@ import net.minecraftforge.registries.RegistryObject;
 
 public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
-        DeferredRegister.create(Registries.CREATIVE_MODE_TAB, ResourcefulSlimes.MODID);
+        DeferredRegister.create(Registries.CREATIVE_MODE_TAB, LiquidSlimes.MODID);
 
     @SuppressWarnings("null")
-    public static final RegistryObject<CreativeModeTab> RESOURCEFUL_SLIMES_TAB =
-        CREATIVE_MODE_TABS.register("resourceful_slimes",
+    public static final RegistryObject<CreativeModeTab> liquid_slimes_TAB =
+        CREATIVE_MODE_TABS.register("liquid_slimes",
         () -> CreativeModeTab.builder()
         .icon(() -> new ItemStack(ModItems.SLIME_CORE.get()))
-        .title(Component.translatable("creativetab.resourceful_slimes_tab"))
+        .title(Component.translatable("creativetab.liquid_slimes_tab"))
         .displayItems((pParameters, pOutput) -> {
             pOutput.accept(ModItems.SLIME_CORE.get());
             pOutput.accept(Items.SLIME_BALL);

@@ -9,11 +9,11 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "resourceful_slimes:core_holder"
+                    "name": "liquid_slimes:core_holder"
                 }
             ],
             "rolls": 1.0
         }
     ],
-    "random_sequence": "resourceful_slimes:blocks/core_holder"
+    "random_sequence": "liquid_slimes:blocks/core_holder"
 }

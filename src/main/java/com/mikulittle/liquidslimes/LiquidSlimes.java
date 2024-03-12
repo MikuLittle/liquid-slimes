@@ -1,9 +1,9 @@
-package com.mikulittle.resourcefulslimes;
+package com.mikulittle.liquidslimes;
 
-import com.mikulittle.resourcefulslimes.block.ModBlocks;
-import com.mikulittle.resourcefulslimes.block.entity.ModBlockEntities;
-import com.mikulittle.resourcefulslimes.item.ModCreativeModeTabs;
-import com.mikulittle.resourcefulslimes.item.ModItems;
+import com.mikulittle.liquidslimes.block.ModBlocks;
+import com.mikulittle.liquidslimes.block.entity.ModBlockEntities;
+import com.mikulittle.liquidslimes.item.ModCreativeModeTabs;
+import com.mikulittle.liquidslimes.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -20,15 +20,15 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(ResourcefulSlimes.MODID)
-public class ResourcefulSlimes
+@Mod(LiquidSlimes.MODID)
+public class LiquidSlimes
 {
     // Define mod id in a common place for everything to reference
-    public static final String MODID = "resourceful_slimes";
+    public static final String MODID = "liquid_slimes";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    public ResourcefulSlimes()
+    public LiquidSlimes()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 

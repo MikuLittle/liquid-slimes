@@ -15,11 +15,11 @@ license="GPL3"
 # A list of mods - how many allowed here is determined by the individual mod loader
 [[mods]] #mandatory
 # The modid of the mod
-modId="resourceful_slimes" #mandatory
+modId="liquid_slimes" #mandatory
 # The version number of the mod
 version="0.0.1" #mandatory
 # A display name for the mod
-displayName="Resourceful Slimes" #mandatory
+displayName="Liquid Slimes" #mandatory
 # A URL to query for updates for this mod. See the JSON update specification https://docs.minecraftforge.net/en/latest/misc/updatechecker/
 #updateJSONURL="https://change.me.example.invalid/updates.json" #optional
 # A URL for the "homepage" for this mod, displayed in the mod UI

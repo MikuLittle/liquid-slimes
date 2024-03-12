@@ -1,10 +1,10 @@
-package com.mikulittle.resourcefulslimes.block;
+package com.mikulittle.liquidslimes.block;
 
 import java.util.function.Supplier;
 
-import com.mikulittle.resourcefulslimes.ResourcefulSlimes;
-import com.mikulittle.resourcefulslimes.block.custom.CoreHolderBlock;
-import com.mikulittle.resourcefulslimes.item.ModItems;
+import com.mikulittle.liquidslimes.LiquidSlimes;
+import com.mikulittle.liquidslimes.block.custom.CoreHolderBlock;
+import com.mikulittle.liquidslimes.item.ModItems;
 
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -18,7 +18,7 @@ import net.minecraftforge.registries.RegistryObject;
 
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
-        DeferredRegister.create(ForgeRegistries.BLOCKS, ResourcefulSlimes.MODID);
+        DeferredRegister.create(ForgeRegistries.BLOCKS, LiquidSlimes.MODID);
 
     public static final RegistryObject<Block> CORE_HOLDER = registerBlock("core_holder",
     () -> new CoreHolderBlock(
